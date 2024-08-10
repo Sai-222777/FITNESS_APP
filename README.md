@@ -21,9 +21,11 @@ Download all the folders in a directory, and connect to an android emulator or t
 with usb debugging enabled.  
 Once connected, run the command 'flutter run' in the terminal.
 
-<div style="display-flex; justify-content: space-around">
+<div style="display-flex; justify-content: space-around padding: 10px">
 <img src="login.jpg" width="200" height="350"/>
 <img src="instructions.jpg" width="200" height="350"/>
+<img src="home.jpg" width="200" height="350"/>
+<img src="exercises.jpg" width="200" height="350"/>
 </div>
 
 ## PROJECT REPORT
