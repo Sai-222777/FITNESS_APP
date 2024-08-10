@@ -21,6 +21,7 @@ Download all the folders in a directory, and connect to an android emulator or t
 with usb debugging enabled.  
 Once connected, run the command 'flutter run' in the terminal.
 
+![](login.jpg)
 
 ## PROJECT REPORT
 
