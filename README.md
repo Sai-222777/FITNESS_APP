@@ -4,15 +4,15 @@ A Home Fitness App.
 
 ## Introduction
 
-Users can login or register for free.
-Once logged in, user can choose which particular workout they wish to do.
-"How to do" is available for all the workouts included in the app.
-During the workout, users have the option to restart, pause or skip the current exercise.
-If an user happens to quit the workout, feedback is taken to improve the workouts.
-History Screen available to show the past workouts of the user.
-User Profile Screen to manage weight, height, workout preferences, etc.
+Users can login or register for free.  
+Once logged in, user can choose which particular workout they wish to do.  
+"How to do" is available for all the workouts included in the app.  
+During the workout, users have the option to restart, pause or skip the current exercise.  
+If an user happens to quit the workout, feedback is taken to improve the workouts.  
+History Screen available to show the past workouts of the user.  
+User Profile Screen to manage weight, height, workout preferences, etc.  
 
-Data storage, user authentication implemented with Firebase.
+Data storage, user authentication implemented with Firebase.  
 All depedencies/packages utilized mentioned in 'pubspec.yaml'
 
 ## Running
