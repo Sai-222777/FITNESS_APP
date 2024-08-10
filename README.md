@@ -18,7 +18,8 @@ All depedencies/packages utilized mentioned in 'pubspec.yaml'
 ## Running
 
 Download all the folders in a directory, and connect to an android emulator or to a smartphone
-with usb debugging enabled. Once connected, run the command 'flutter run' in the terminal.
+with usb debugging enabled.  
+Once connected, run the command 'flutter run' in the terminal.
 
 
 ## PROJECT REPORT
@@ -33,13 +34,13 @@ Individual exercises (duration/reps) can be modified as per the user's convienen
 
 This project/app was made with the Flutter Software Development Kit, with Firebase for user authentication and Firestore for real-time database needs, storage for workout videos.
 
-The main challenges faced during the development of this app were:-
+### The main challenges faced during the development of this app were:-
 
 -> While loading the 'showModalBottomSheet' widget to display the 'How to do' for each exercise, the corresponding tutorial video is fetched from the Firestore storage, and the video was not being displayed automatically unless the user scrolled down causing the widget to reload, comprimising the user experience. Most online references/solutions were outdated as they were deprecated(removed). The solution implemented was by wrapping this widget with a 'stateBuilder' widget and creating a new 'stateSetter' function and implementing setState() with the new 'stateSetter' function, without requiring the user to manually trigger a reload by scrolling.
 
 -> Implementing user notifications in a Flutter application posed significant challenges, largely due to the necessity of using a specific Flutter compiler version, alongside the complexities of configuring 'android/gradle' build settings and permissions. Issues were encountered when certain permissions were denied, or versions were found to be incompatible, resulting in unsuccessful notification deliveries. After conducting extensive research and consulting various resources, a detailed documentation was identified that provided the necessary guidance. This allowed for the correct configuration of required permissions, notification channels, and the scheduling of notifications with appropriate priority settings, ultimately ensuring reliable delivery to users.
 
-Future Scope:-
+### Future Scope:-
 
 -> Animations for all exercices will be added.
 
