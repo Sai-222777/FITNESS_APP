@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "213752844763",
+    "project_id": "zensefit",
+    "storage_bucket": "zensefit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213752844763:android:0abd86c77ae37811df97fe",
+        "android_client_info": {
+          "package_name": "com.zensefit.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyxkYClaPvvffuSXK3kGD8LRbUQokEndI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
