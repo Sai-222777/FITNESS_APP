@@ -1,4 +1,4 @@
-# fitness
+# Fitness
 
 A Home Fitness App.
 
@@ -50,6 +50,6 @@ This project/app was made with the Flutter Software Development Kit, with Fireba
 
 -> Users will be able to share their workout statistics with other users in their 'friends list' through the app or via mail or any messaging platform  
 
--> Users will soon be able to connect with their smart wearables from the app via bluetooth, from which data like heart rate, steps, etc could be aquired.
+-> Users will soon be able to connect with their smart wearables from the app via bluetooth, from which data like heart rate, steps, etc could be aquired
 
 
