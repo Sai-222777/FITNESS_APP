@@ -23,9 +23,9 @@ Once connected, run the command 'flutter run' in the terminal.
 
 <div style="display: flex; justify-content: space-around; gap: 20px; padding: 10px;">
   <img src="login.jpg" width="200" height="400"/>
-  <img src="instructions.jpg" width="200" height="400"/>
+  <img src="exercise2.jpeg" width="200" height="400"/>
   <img src="home.jpg" width="200" height="400"/>
-  <img src="exercises2.jpeg" width="200" height="400"/>
+  <img src="exercises.jpg" width="200" height="400"/>
 </div>
 
 ## PROJECT REPORT
