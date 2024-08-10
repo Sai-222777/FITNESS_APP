@@ -22,6 +22,7 @@ with usb debugging enabled.
 Once connected, run the command 'flutter run' in the terminal.
 
 <img src="login.jpg" width="200" height="300"/>
+<img src="instructions.jpg" width="200" height="300"/>
 
 ## PROJECT REPORT
 
