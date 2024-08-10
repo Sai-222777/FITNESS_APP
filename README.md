@@ -15,8 +15,13 @@ User Profile Screen to manage weight, height, workout preferences, etc.
 Data storage, user authentication implemented with Firebase.
 All depedencies/packages utilized mentioned in 'pubspec.yaml'
 
+## Running
 
-### PROJECT REPORT
+Download all the folders in a directory, and connect to an android emulator or to a smartphone
+with usb debugging enabled. Once connected, run the command 'flutter run' in the terminal.
+
+
+## PROJECT REPORT
 
 The purpose of this project is to facilitate working out at home or in the absence of gym facilities.
 Even with the increasing awareness of the importance of physical health, many individuals struggle to maintain consistency due to lack of motivation and guidance, and this project aims to tackle that issue.
@@ -37,9 +42,13 @@ The main challenges faced during the development of this app were:-
 Future Scope:-
 
 -> Animations for all exercices will be added.
--> Caching can be implemented once the number of the exercises become large
--> Once enough training data is collected, personalized workouts can be specificily curated for the user's desired body goal
--> Users will be able to share their workout statistics with other users in their 'friends list' through the app or via mail or any messaging platform
+
+-> Caching can be implemented once the number of the exercises become large  
+
+-> Once enough training data is collected, personalized workouts can be specificily curated for the user's desired body goal  
+
+-> Users will be able to share their workout statistics with other users in their 'friends list' through the app or via mail or any messaging platform  
+
 -> Users will soon be able to connect with their smart wearables from the app via bluetooth, from which data like heart rate, steps, etc could be aquired.
 
 
