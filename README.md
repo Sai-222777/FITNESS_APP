@@ -4,22 +4,26 @@ A Home Fitness App.
 
 ## Introduction
 
-Users can login or register for free.  
-Once logged in, users can choose which particular workout they wish to do.  
+Users can log in or register for free.  
+Once logged in, users can choose which workout they wish to do once logged in.  
 "How to do" is available for all the workouts included in the app.  
-During the workout, users have the option to restart, pause, or skip the current exercise.  
+During workouts, users can restart, pause, or skip the current exercise.  
 If a user happens to quit the workout, feedback is taken to improve the workouts.  
-History Screen is available to show the user's past workouts.  
-The user profile screen is used to manage weight, height, workout preferences, etc.  
+A History screen is available to show past workouts, and the Profile screen allows users to manage weight, height, workout preferences, and other personal data.
 
 Data storage and user authentication are implemented with Firebase.  
 All dependencies/packages utilized are mentioned in 'pubspec.yaml'
 
 ## Running
 
-Download all the folders in a directory, and connect to an Android emulator or to a smartphone
-with USB debugging enabled.  
-Once connected, run the command 'flutter run' in the terminal.
+To run this app:
+
+1. Download all files and folders to a directory.
+2. Connect to an Android emulator or a smartphone with USB debugging enabled.
+3. In the terminal, run the command:
+
+   ```bash
+   flutter run
 
 <div style="display: flex; justify-content: space-around; gap: 20px; padding: 10px;">
   <img src="login.jpg" width="200" height="400"/>
