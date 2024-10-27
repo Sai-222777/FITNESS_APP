@@ -32,34 +32,38 @@ To run this app:
   <img src="exercises.jpg" width="200" height="400"/>
 </div>
 
-## PROJECT REPORT
+## Project Report
 
-This project aims to facilitate working out at home or in the absence of gym facilities.
-Even with the increasing awareness of the importance of physical health, many individuals struggle to maintain consistency due to a lack of motivation and guidance, and this project aims to tackle that issue.
+This project aims to facilitate working out at home or in the absence of gym facilities. Despite the growing awareness of the importance of physical health, many individuals struggle to maintain consistency due to a lack of motivation and guidance. This app addresses that issue by providing users with structured workout options.
 
-The core functionality for this project is to allow the user to select any body part workout from the shown list and give instructions and timings/durations for the exercise in a particular sequence.
+### Core Functionality
 
-The app has workouts tailored for each body part, including meditation for the mind. 
-Individual exercises (duration/reps) can be modified at the user's convenience. Guidance is offered to all users for every exercise which includes instructions, a tutorial video, and some common mistakes. Users can view their BMI(body mass index), and set workout reminders for any day within the next ten(10) days from that day. 
+The app enables users to select workouts targeting specific body parts from a comprehensive list. Each workout includes detailed instructions and specified timings/durations for the exercises. Additionally, the app offers tailored workouts, including meditation for mental wellness. 
 
-This project/app was made with the Flutter Software Development Kit, with Firebase for user authentication, Firestore for real-time database needs, and storage for workout videos.
+Key features include:
+- **Customizable Exercises**: Users can modify individual exercise durations and repetitions according to their preferences.
+- **Guidance**: Each exercise is accompanied by instructions, tutorial videos, and tips on common mistakes.
+- **BMI Tracking**: Users can view their Body Mass Index (BMI) to monitor their fitness levels.
+- **Workout Reminders**: Users can set reminders for workouts up to ten days in advance.
 
-### The main challenges faced during the development of this app were:-
+This app was developed using the Flutter Software Development Kit (SDK), with Firebase for user authentication, Firestore for real-time database needs, and Firebase Storage for workout videos.
 
--> While loading the 'showModalBottomSheet' widget to display the 'How to do' for each exercise, the corresponding tutorial video is fetched from the Firestore storage, and the video was not being displayed automatically unless the user scrolled down causing the widget to reload, compromising the user experience. Most online references/solutions were outdated as they were deprecated(removed). The solution implemented was by wrapping this widget with a 'stateBuilder' widget creating a new 'stateSetter' function and implementing setState() with the new 'stateSetter' function, without requiring the user to manually trigger a reload by scrolling.
+### Development Challenges
 
--> Implementing user notifications in a Flutter application posed significant challenges, largely due to the necessity of using a specific Flutter compiler version, alongside the complexities of configuring 'android/gradle' build settings and permissions. Issues were encountered when certain permissions were denied, or versions were found to be incompatible, resulting in unsuccessful notification deliveries. After conducting extensive research and consulting various resources, detailed documentation was identified that provided the necessary guidance. This allowed for the correct configuration of required permissions, notification channels, and the scheduling of notifications with appropriate priority settings, ultimately ensuring reliable delivery to users.
+Several challenges were encountered during the development of this app:
 
-### Future Scope:-
+1. **Video Loading in 'showModalBottomSheet'**: While displaying the "How to Do" videos for each exercise, the corresponding tutorial video was fetched from Firestore storage but did not load automatically unless the user scrolled down, which compromised user experience. Many online references for solutions were outdated. The implemented solution involved wrapping the widget with a `StateBuilder` and creating a new `stateSetter` function. This allowed for the automatic loading of the video without requiring the user to trigger a reload by scrolling.
 
--> Animations for all exercises will be added.
+2. **User Notifications**: Implementing user notifications in the Flutter application posed significant challenges. It required using a specific Flutter compiler version and configuring `android/gradle` build settings and permissions. Issues arose with denied permissions or incompatible versions, leading to unsuccessful notification deliveries. After extensive research and consultation with various resources, detailed documentation was found that provided the necessary guidance. This enabled the correct configuration of required permissions, notification channels, and the scheduling of notifications with appropriate priority settings, ensuring reliable delivery to users.
 
--> Caching can be implemented once the number of exercises becomes large  
+### Future Scope
 
--> Once enough training data is collected, personalized workouts can be specifically curated for the user's desired body goal  
+Future enhancements for the app include:
 
--> Users will be able to share their workout statistics with other users in their 'friends list' through the app or via mail or any messaging platform  
+- **Exercise Animations**: Adding animations for all exercises to improve engagement.
+- **Content Caching**: Implementing caching solutions once the number of exercises increases, enhancing performance.
+- **Personalized Workouts**: Curating personalized workout plans based on collected training data and user goals.
+- **Social Features**: Enabling users to share workout statistics with friends within the app or via email and messaging platforms.
+- **Smart Wearable Integration**: Allowing users to connect with smart wearables via Bluetooth to gather data such as heart rate, steps, etc.
 
--> Users will soon be able to connect with their smart wearables from the app via Bluetooth, from which data like heart rate, steps, etc could be acquired
-
-
+This project not only promotes physical fitness but also seeks to create a supportive community for users on their fitness journeys.
