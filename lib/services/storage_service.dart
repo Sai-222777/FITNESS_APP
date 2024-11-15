@@ -31,4 +31,20 @@ class StorageService{
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.remove('currentPass');
   }
+
+  static Future<void> storePhoto(String path) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setString('currentPhoto', path);
+  }
+
+  static Future<String?> getPhoto() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    return prefs.getString('currentPhoto');
+  }
+
+  static Future<void> clearPhoto() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.remove('currentPhoto');
+  }
+
 }
