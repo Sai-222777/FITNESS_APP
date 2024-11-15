@@ -454,7 +454,14 @@ class _WorkoutPageState extends State<WorkoutPage>{
               children: [
                 IconButton(
                   onPressed: (){
-                    muted ? player.setVolume(1) : player.setVolume(0);
+                    if(widget.workout != 'YOGA'){
+                      muted ? player.setVolume(1) : player.setVolume(0);
+                      
+                    }
+                    else
+                    {
+                      muted ? yogaPlayer.setVolume(1) : yogaPlayer.setVolume(0);
+                    }
                     setState(() {
                       muted = !muted;
                     });
