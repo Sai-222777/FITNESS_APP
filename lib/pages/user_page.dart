@@ -417,16 +417,25 @@ class _UserPageState extends State<UserPage> {
   String? picUrl;
 
   void getProfilePic()async{
-    try{
-      picUrl = await FirebaseStorage.instance.ref('profile').child(user!.email!).getDownloadURL();
-      setState(() {
-        picUrl = picUrl;
-      });
-    } on FirebaseException catch(e){
-      print(e.toString());
+    String? path = await StorageService.getPhoto();
+    if (path == null) {
+      try{
+        picUrl = await FirebaseStorage.instance.ref('profile').child(user!.email!).getDownloadURL();
+        setState(() {
+          picUrl = picUrl;
+        });
+      } on FirebaseException catch(e){
+        print(e.toString());
+      }
+      catch(e){
+        print('error fetching image $e');
+      }
     }
-    catch(e){
-      print('error fetching image $e');
+    else
+    {
+      setState(() {
+        image = File(path);
+      });
     }
   }
 
@@ -439,6 +448,7 @@ class _UserPageState extends State<UserPage> {
         setState(() {
           image = File(pickedFile.path);
         });
+        await StorageService.storePhoto(pickedFile.path);
         try{
           await FirebaseStorage.instance.ref('profile').child(user!.email!).putFile(image!);
         }catch(e){ print('error uploading file $e');}
@@ -555,7 +565,7 @@ class _UserPageState extends State<UserPage> {
                                       )
                                     ),
                                 ),
-                              if(isTextEnabled || picUrl==null)
+                              if(isTextEnabled || (picUrl==null && image==null))
                                 Positioned(
                                   bottom: -12,
                                   right: 0,
@@ -1578,6 +1588,7 @@ class _UserPageState extends State<UserPage> {
                           await auth.signOut();
                           await StorageService.clearEmail();
                           await StorageService.clearPassword();
+                          await StorageService.clearPhoto();
                           Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(builder: (context) => const LoginPage()),
